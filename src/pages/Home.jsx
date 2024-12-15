@@ -129,10 +129,10 @@ const Home = ({ searchQuery }) => {
 
 
     return (
-        <div className="flex justify-between items-start space-x-3 h-screen bg-gray-100 p-8">
+        <div className="flex justify-between items-start space-x-3 h-screen bg-gray-100 p-4">
             {/* Calendar Section */}
             <div className="w-full p-6 bg-white rounded-lg shadow-md">
-                <div className="flex justify-between items-center mb-4">
+                <div className="flex justify-between items-center mb-2">
                     <div className="text-3xl font-bold">
                         {currentMonth.toLocaleString("default", {
                             month: "long",

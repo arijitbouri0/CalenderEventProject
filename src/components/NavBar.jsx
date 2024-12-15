@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 const NavBar = ({ searchQuery, setSearchQuery }) => {
   return (
-    <header className="w-full bg-white p-6 place-content-center shadow-md flex justify-between items-center">
+    <header className="w-full bg-white p-2 place-content-center shadow-md flex justify-between items-center">
       <div>
         <h1 className="text-purple-500 font-bold xs:text-lg md:text-3xl">
           EventCreator

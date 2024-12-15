@@ -77,7 +77,7 @@ const Calender = ({ currentMonth, events, searchQuery, setCurrentDay, handleDrop
                     </div>
                 ))}
             </div>
-            <div className="grid grid-cols-7 gap-1 md:gap-4 mt-2">
+            <div className="grid grid-cols-7 gap-[2px] sm:gap-1 md:gap-2 mt-1 h-[calc(100vh-200px)] overflow-hidden">
                 {calendarDays.map((day, index) => {
                     const dateKey = day
                         ? new Date(Date.UTC(currentMonth.getFullYear(), currentMonth.getMonth(), day))
@@ -107,7 +107,7 @@ const Calender = ({ currentMonth, events, searchQuery, setCurrentDay, handleDrop
                     return (
                         <div
                             key={index}
-                            className={`h-20 sm:h-20 md:h-32 lg:h-36 flex md:text-4xl text-sm items-center justify-center border rounded-lg cursor-pointer relative 
+                            className={`h-16 sm:h-12 md:h-12 lg:h-16 flex md:text-xl text-sm items-center justify-center border rounded-lg cursor-pointer relative 
                                 ${isSelected
                                     ? "bg-green-200 text-white font-bold" // Selected date
                                     : isToday
@@ -134,7 +134,7 @@ const Calender = ({ currentMonth, events, searchQuery, setCurrentDay, handleDrop
                                     <div
                                         key={i}
                                         className="absolute bottom-0 left-1/2 transform -translate-x-1/2 
-               bg-blue-300 text-[10px] sm:text-xs md:text-sm px-1 sm:px-2 py-[2px] sm:py-1 
+               bg-blue-300 text-[8px] sm:text-xs md:text-xs px-1 sm:px-2 py-[2px] sm:py-1 
                rounded mt-1 w-[90%] sm:w-auto text-center truncate"
                                     >
                                         {event.name}
