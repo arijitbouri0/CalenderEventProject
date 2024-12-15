@@ -69,27 +69,6 @@ https://calender-event-project-wz62.vercel.app/
   http://localhost:5172
 ```
 
-### Setup Frontend
-
-1.Navigate to the client folder:
-```bash
-cd ../client
-```
-
-3.Create a .env file and add:
-```bash
-BACKEND_SERVER='http://localhost:8000'
-```
-
-Install frontend dependencies:
-```bash
-npm install
-```
-
-Run the React App
-```
-npm run dev
-```
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
